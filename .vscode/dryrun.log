@@ -1,0 +1,11 @@
+make: Entering directory `/Users/or/Desktop/private/otproc/IAM-Policy-Controller'
+mkdir -p /Users/or/Desktop/private/otproc/IAM-Policy-Controller/bin
+ 
+GOBIN=/Users/or/Desktop/private/otproc/IAM-Policy-Controller/bin go install sigs.k8s.io/controller-tools/cmd/controller-gen@v0.9.0
+ 
+/Users/or/Desktop/private/otproc/IAM-Policy-Controller/bin/controller-gen object:headerFile="hack/boilerplate.go.txt" paths="./..."
+go fmt ./...
+go vet ./...
+go build -o bin/manager main.go
+make: Leaving directory `/Users/or/Desktop/private/otproc/IAM-Policy-Controller'
+ 
