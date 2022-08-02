@@ -1,0 +1,16 @@
+domain: otproc.com
+layout:
+- go.kubebuilder.io/v3
+projectName: iam-policy-controller
+repo: github.com/OTProc/IAM-Policy-Controller
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: otproc.com
+  group: crd.k8s.otproc.com
+  kind: IAMPolicy
+  path: github.com/OTProc/IAM-Policy-Controller/api/v1alpha1
+  version: v1alpha1
+version: "3"

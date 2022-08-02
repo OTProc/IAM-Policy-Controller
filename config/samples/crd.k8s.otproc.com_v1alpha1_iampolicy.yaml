@@ -1,0 +1,6 @@
+apiVersion: crd.k8s.otproc.com.otproc.com/v1alpha1
+kind: IAMPolicy
+metadata:
+  name: iampolicy-sample
+spec:
+  # TODO(user): Add fields here
